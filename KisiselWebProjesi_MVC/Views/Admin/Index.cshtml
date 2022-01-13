@@ -1,0 +1,23 @@
+﻿@using KisiselWebProjesi_MVC.Models.Siniflar
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<table class="table table-bordered mt-3">
+    <tr>
+        <th>ID</th>
+        <th>İSİM</th>
+        <th>GÜNCELLE</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.isim</td>
+            <td><a href="/Admin/AnasayfaGetir/@x.id" class="btn btn-sm btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+</table>

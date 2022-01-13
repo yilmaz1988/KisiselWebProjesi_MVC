@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    color: antiquewhite;
+    background-image: url(resim23.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center .avatar img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 5%;
+
+}
+.center{
+    width: 600px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+.content{
+    padding: 30px;
+}
+h2{
+    color: wheat;
+}
+.content h3,p{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 10px auto;
+}
+.content h3{
+    margin-top: 20px;
+}
+div.sosyal i{
+    padding: 0 10px;
+    font-size: 30px;
+    color: rgba(255,255,255, 0.6);
+    transition: 0.3s;
+    box-shadow: 1px 1px 3px 1px rgb(163, 211, 100);
+}
+div.sosyal i:hover{
+    color: rgba(155, 10, 55, 0.7);
+}
+@media screen and(max-width:700px) {
+    .center{
+        width: 300px;
+        height: 300px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    p{
+        width: 90%;
+        font-size: 12px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    .sosyal a i{
+        font-size: 35px;
+    }
+}
